@@ -1,0 +1,57 @@
+/****************************
+Herança e especificidade */
+
+/****************************
+Herança */
+/*
+* {
+    border: 1px solid blue;
+}
+
+body {
+    color: red;
+}
+*/
+
+/****************************
+Especificidade */
+/*
+#pagina p {
+    color: red !important;
+}
+
+#pagina p {
+    color: blue;
+}
+*/
+
+/***************************
+Se um seletor for mais específico que o outro
+a regra mais específica será aplicada
+(tera precedência sobre regras mais gerais)
+*/
+
+* {
+    color: red;
+}
+
+/**********************
+Ordem de aplicação */
+
+/*************
+-> Terceiro ('h2'(default))*/
+h2 {
+    color: blue;
+}
+
+/*************
+-> Segundo ('class'(.))*/
+h2.verde {
+    color: green;
+}
+
+/*************
+-> Primeiro ('id'(#)) */
+h2#amarelo {
+    color: yellow;
+}
