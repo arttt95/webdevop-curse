@@ -25,10 +25,19 @@ ul a {
     text-decoration: none;
     text-indent: 40px;
     line-height: 40px;
-    background: url(../help/menu.png) no-repeat left bottom;
+    background: #f7b600 url(../help/menu.png) no-repeat left bottom;
 }
 
 a:hover {
     background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+#home #navegacao-lateral .home a,
+#sobre #navegacao-lateral .sobre a,
+#servicos #navegacao-lateral .servicos a {
+    background-position: right bottom;
+    background-color: #f99200;
     color: #fff;
 }
