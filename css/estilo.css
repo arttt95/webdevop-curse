@@ -1,222 +1,39 @@
-/*
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    padding: 5px 20px;
-    background: url(../help/seta.png) no-repeat left center;
-}
-*/
-
-/****************************
-Navegação Vertical */
-
-/*
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-ul a {
-    width: 200px;
-    height: 40px;
-    display: block;
-    color: #000;
-    text-decoration: none;
-    text-indent: 40px;
-    line-height: 40px;
-    background: #f7b600 url(../help/menu.png) no-repeat left bottom;
-}
-
-a:hover {
-    background-position: right bottom;
-    background-color: #f99200;
-    color: #fff;
-}
-
-#home #navegacao-lateral .home a,
-#sobre #navegacao-lateral .sobre a,
-#servicos #navegacao-lateral .servicos a {
-    background-position: right bottom;
-    background-color: #f99200;
-    color: #fff;
-}
-*/
-
-/********************************
-Navegação Horizontal */
-
-/*
-ul#navegacao-horizontal {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    width: 720px;
-    background: #159cb0 url(../help/fundo-horizontal.png) repeat-x;
-    float: left;
-}
-
-ul#navegacao-horizontal li {
-    float: left;
-}
-
-ul#navegacao-horizontal a {
-    display: block;
-    padding: 0 2em;
-    line-height: 2.2em;
-    text-decoration: none;
-    color: #fff;
-    background: url(../help/divisor.png) repeat-y left top;
-}
-
-ul#navegacao-horizontal .primeiro a {
-    background: none;
-}
-
-ul#navegacao-horizontal a:hover {
-    color: #085662;
-    background: #44cade;
-}
-
-#home #navegacao-horizontal .home a,
-#sobre #navegacao-horizontal .sobre a,
-#servicos #navegacao-horizontal .servicos a {
-    color: #085662;
-    background: #44cade;
-}
-*/
-
-/*******************************
-Barra de Navegação com abas */
-
-/*
-body {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    width: 720px;
-}
-
-ul li {
-    float: left;
-    background: url(../help/aba-direita.png) no-repeat top right;
-}
-
-li a {
-    display: block;
-    padding: 0 2em;
-    line-height: 3em;
-    text-decoration: none;
-    background: url(../help/aba-esquerda.png) no-repeat top left;
-    color: #fff;
-}
-
-ul a:hover {
-    color: #894a1f;
-}
-
-ul #atual {
-    background: url(../help/aba-direita-atual.png) no-repeat top right;
-}
-
-ul #atual a {
-    background: url(../help/aba-esquerda-atual.png) no-repeat top left;
-}
-*/
-
-/*********************************
-Layouts */
+/*************************
+Estilizando Formulários */
 
 body {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background: #f2f2f2;
+    font-family: "Trebuchet MS", Helvetica ,sans-serif;
 }
 
-#container {
-    border: 1px solid red;
-    width: 960px; /*720px*/
-    margin: 0 auto;
-    background: #fff url(../help/coluna.png) repeat-y left top;
-    min-width: 720px;
-    max-width:  1280px;
+fieldset {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
 }
 
-#marca {
-    width: 100%;
-    height: 300px;
-    background: #225992 url(../help/cabecalho2.jpg) no-repeat center;
-    text-align: center;
-    line-height: 300px;
+legend {
+    font-weight: bold;
 }
 
-/*
-#imagem {
-    width: 90%;
-    overflow: hidden;
-    border: 1px solid red;
-}
-*/
-
-#conteudo {
-    width: 75%; /*520px -> 75%*/
-    float: right;
+label {
+    display: block;
+    cursor: pointer;
 }
 
-#navegacao {
-    width: 23%; /*180px -> 25%*/
-    float: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    /* background: #d1d1d1; */
+input {
+    width: 20em;
 }
 
-#conteudo-principal {
-    width: 64%; /*320px -> 64% */
-    float: left;
+textarea {
+    width: 20em;
+    height: 10em;
 }
 
-img.img-noticia {
-    width: 94%;
-    padding: 2%;
-    max-width: 600px;
+input.radio, input.checkbox, input.submit {
+    width: auto;
 }
 
-#conteudo-secundario {
-    width: 34%;  /*180px -> 36%*/
-    float: right;
-    background: #d1d1d1;
+.radio {
+    margin-right: 1em;
 }
-
-#conteudo-secundario h1,
-#conteudo-secundario h2,
-#conteudo-secundario h3,
-#conteudo-secundario p {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#navegacao ul {
-    list-style-type: none;
-}
-
-
-#navegacao li a {
-    text-decoration: none;
-}
-
-#rodape {
-    clear: both;
-    background: #c4c4c4;
-    padding: 5px;
-}
-
-
-
