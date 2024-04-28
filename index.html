@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout com Coluna Falsa</title>
+    <title>Estilizando Formulários</title>
 
     <!-- Estilo CSS Customizado -->
     <link rel="stylesheet" href="css/estilo.css" type="text/css">
@@ -14,76 +14,66 @@
 
 <body>
 
-    <div id="container">
+    <h2>Estilizando Formulários</h2>
 
-        <!-- Div Superior para exibir a Marca -->
-        <div id="marca">Marca</div>
+    <form>
 
-        <!-- Div Conteúdo Principal e Central -->
-        <div id="conteudo">
+        <fieldset>
+
+            <legend>Detalhes de contato</legend>
             
-            <div id="conteudo-principal" >
+            <div>
 
-                <h2>Conteúdo principal</h2>
-
-                <img class="img-noticia" src="help/natureza.jpg">
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptates quam, sunt blanditiis quia alias fuga corrupti 
-                    eos eius iure fugit recusandae ipsa incidunt est enim 
-                    obcaecati libero expedita omnis nisi?
-                </p>
-
-                <h2>Conteúdo principal</h2>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptates quam, sunt blanditiis quia alias fuga corrupti 
-                    eos eius iure fugit recusandae ipsa incidunt est enim 
-                    obcaecati libero expedita omnis nisi?
-                </p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
 
             </div>
 
-            <div id="conteudo-secundario">
+            <div>
 
-                <h2>Conteúdo secundário</h2>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptates quam, sunt blanditiis quia alias fuga corrupti 
-                    eos eius iure fugit recusandae ipsa incidunt est enim 
-                    obcaecati libero expedita omnis nisi?
-                </p>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
 
             </div>
 
-        </div>
+            <div>
 
-        <!-- Navegação Lateral (Menu) -->
-        <div id="navegacao">
+                <label for="url">URL:</label>
+                <input type="text" name="url" id="url">
 
-            <!-- Menu -->
-            <ul id="navegacao-lateral">
+            </div>
 
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Clientes</a></li>
-                <li><a href="#">Contato</a></li>
 
-            </ul>
+        </fieldset>
 
-        </div>
+        <fieldset>
 
-        <div id="rodape">
-            Rodapé
-        </div>
+            <legend>Comentários</legend>
 
-    </div>
+            <div>
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem">
+                </textarea>
+            </div>
+
+        </fieldset>
+
+        <fieldset #lembrar>
+            
+            <legend>Lembra de mim</legend>
+            <div>
+                <label for="sim">
+                    <input class="radio" type="radio" name="lembrar" id="sim">Sim
+                </label>
+            </div>
+            <div>
+                <label for="nao">
+                    <input class="radio" type="radio" name="lembrar" id="nao">Não
+                </label>
+            </div>
+        </fieldset>
+
+    </form>
 
 </body>
 
