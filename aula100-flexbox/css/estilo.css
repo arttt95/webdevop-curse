@@ -1,0 +1,33 @@
+#conteudo {
+    background: #dcdcdc;
+    height: 600px;
+    display: flex;
+
+    /*
+    row|row-reverse|column|column-reverse|initial|inherit;
+    */
+    flex-direction: row;
+
+    /*
+    flex-wrap: nowrap|wrap|wrap-reverse|initial|inherit;
+    */
+    flex-wrap: nowrap;
+
+    /*
+    justify-content: flex-start|flex-end|center|space-between|space-around
+    space-evenly|initial|inherit;
+    */
+    justify-content: space-around;
+
+    /*
+    align-items: normal|stretch|positional alignment|flex-start|flex-end
+    baseline|initial|inherit;
+    */
+    align-items: baseline;
+}
+
+.item {
+    margin: 10px;
+    background: white;
+    border: 1px solid gray;
+}
